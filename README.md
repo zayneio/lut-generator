@@ -51,3 +51,10 @@ Install RMagick:
 ```shell
 gem install rmagick
 ```
+
+### Notes & Sources
+I spent a good bit of time trying to figure out if/how I could write my own image-to-lut converter in ruby. Here are some of the documents, projects and tools that ultimately helped me to fill in the missing peices:
+- [Cube LUT Specification (Adobe)](https://wwwimages2.adobe.com/content/dam/acom/en/products/speedgrade/cc/pdfs/cube-lut-specification-1.0.pdf)
+- [LUT Convert by Mike Boer (Python)](https://github.com/mikeboers/LUT-Convert)
+- [ImageMagick](https://imagemagick.org/index.php)
+- [RMagick](https://rmagick.github.io/)
