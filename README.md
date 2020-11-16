@@ -37,7 +37,14 @@ At this point, all you should need to do is trigger the call method, passing in 
   LUTGenerator.create_lut('path/to/your/image')
 ```
 
-Check in the current directory after running this and you should now have a new LUT file with a .cube extension. You can now take this file and use it to color grade your images and videos!
+Check in the current directory after running this and you should now have a new LUT file with a .cube extension. You can now take this file and use it to color your images and videos.
+
+### Use it with FFmpeg
+Here is an example of how you can use your new lut file to color a video using FFmpeg:
+```
+ffmpeg -i input.mp4 -vf lut3d=file=path/to/your/lut.cube output.mp4
+```
+
 
 ### Dependencies
 This code is dependent on ImageMagick and the ruby gem RMagick.
