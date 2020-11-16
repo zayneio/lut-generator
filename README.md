@@ -39,14 +39,14 @@ At this point, all you should need to do is trigger the call method, passing in 
 
 Check in the current directory after running this and you should now have a new LUT file with a .cube extension. You can now take this file and use it to color your images and videos.
 
-### Use it with FFmpeg
+## Use it with FFmpeg
 Here is an example of how you can use your new lut file to color a video using FFmpeg:
 ```
 ffmpeg -i input.mp4 -vf lut3d=file=path/to/your/lut.cube output.mp4
 ```
 
 
-### Dependencies
+## Dependencies
 This code is dependent on ImageMagick and the ruby gem RMagick.
 
 Install ImageMagick:
@@ -59,7 +59,7 @@ Install RMagick:
 gem install rmagick
 ```
 
-### Notes & Sources
+## Notes & Sources
 I spent a good bit of time trying to figure out if/how I could write my own image-to-lut converter in ruby. Here are some of the documents, projects and tools that ultimately helped me to fill in the missing peices:
 - [Cube LUT Specification (Adobe)](https://wwwimages2.adobe.com/content/dam/acom/en/products/speedgrade/cc/pdfs/cube-lut-specification-1.0.pdf)
 - [LUT Convert by Mike Boer (Python)](https://github.com/mikeboers/LUT-Convert)
